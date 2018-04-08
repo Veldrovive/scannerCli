@@ -1,0 +1,36 @@
+{
+  "name": "scannercli",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel-node app/index.js",
+    "build": "babel app --out-dir build",
+    "start": "node build/index.js"
+  },
+  "author": "Aidan Dempster <aidan.dempster@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "chalk": "^2.3.2",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "configstore": "^3.1.2",
+    "figlet": "^1.2.0",
+    "inquirer": "^5.2.0",
+    "minimist": "^1.2.0",
+    "node-cmd": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "bin": {
+    "findCli": "./index.js"
+  }
+}
